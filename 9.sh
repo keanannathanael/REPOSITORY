@@ -46,7 +46,7 @@ class DetailsModificationService
         // 🚫 Batasi akses hanya untuk user ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '❌ YAA GA BISA YA, LAIN KALI TAU DIRI YA TOLOLl - Protect By @keananofficial');
+            abort(403, '❌ YAA GA BISA YA, LAIN KALI TAU DIRI YA TOLOL - Protect By @keananofficial');
         }
 
         return $this->connection->transaction(function () use ($data, $server) {
